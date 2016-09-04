@@ -1,1 +1,1 @@
-# lexis
+# lexis [![Build Status](https://travis-ci.org/lexisdb/lexis.svg?branch=master)](https://travis-ci.org/lexisdb/lexis)
