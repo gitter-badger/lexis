@@ -1,0 +1,12 @@
+language: go
+
+go: 
+  - 1.7
+
+install:
+  - go get -u github.com/alecthomas/gometalinter
+  - gometalinter --install
+
+script:
+  - gometalinter --enable=testify --enable=test --enable="gofmt -s" --enable=goimports --enable=lll --enable=misspell --enable=unused ./...
+  - go test -v -bench=. ./...
